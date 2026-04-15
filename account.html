@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFLIMITED — Личный кабинет</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">RAFLIMITED</a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="login.html" id="user-link"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container account-page">
+      <aside class="account-sidebar">
+        <div class="account-user-card">
+          <div class="account-avatar">
+            <i class="fa-regular fa-user"></i>
+          </div>
+          <h2 id="account-user-name">Пользователь</h2>
+          <p id="account-user-email">example@mail.com</p>
+        </div>
+
+        <nav class="account-menu">
+          <button class="account-menu-btn active" data-account-tab="profile" type="button">Профиль</button>
+          <button class="account-menu-btn" data-account-tab="orders" type="button">Мои заказы</button>
+          <button class="account-menu-btn" data-account-tab="favorites" type="button">Избранное</button>
+          <button class="account-menu-btn" data-account-tab="settings" type="button">Настройки</button>
+        </nav>
+
+        <button class="clear-cart-btn" id="logout-btn" type="button">Выйти</button>
+      </aside>
+
+      <section class="account-content">
+        <div class="account-tab active" id="profile-tab">
+          <h1>Профиль</h1>
+          <div class="account-info-grid">
+            <div class="account-info-card">
+              <h3>Имя</h3>
+              <p id="profile-name">Пользователь</p>
+            </div>
+            <div class="account-info-card">
+              <h3>E-mail</h3>
+              <p id="profile-email">example@mail.com</p>
+            </div>
+            <div class="account-info-card">
+              <h3>Статус</h3>
+              <p>Постоянный клиент</p>
+            </div>
+            <div class="account-info-card">
+              <h3>Скидка</h3>
+              <p>5%</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="account-tab hidden" id="orders-tab">
+          <h1>Мои заказы</h1>
+          <div class="account-block">
+            <p>У вас пока нет оформленных заказов.</p>
+          </div>
+        </div>
+
+        <div class="account-tab hidden" id="favorites-tab">
+          <h1>Избранное</h1>
+          <div class="account-block">
+            <p>Здесь позже можно вывести избранные товары.</p>
+          </div>
+        </div>
+
+        <div class="account-tab hidden" id="settings-tab">
+          <h1>Настройки</h1>
+          <div class="account-block">
+            <p>В будущем здесь можно добавить смену пароля, адрес доставки и настройки уведомлений.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <p>© 2026 Raflimited. Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

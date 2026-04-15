@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFLIMITED — Товар</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">RAFLIMITED</a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="login.html" id="user-link"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container product-page">
+      <div class="product-page__image">
+        <img id="product-image" src="img/t_shirt_amiri.jpg" alt="Товар" />
+      </div>
+
+      <div class="product-page__info">
+        <h1 id="product-title">Товар</h1>
+        <p class="price" id="product-price">0 ₽</p>
+
+        <p class="product-description" id="product-description">
+          Описание товара.
+        </p>
+
+        <div class="product-options">
+          <p><strong>Размеры:</strong> <span id="product-sizes"></span></p>
+          <p><strong>Цвет:</strong> <span id="product-color"></span></p>
+          <p><strong>Материал:</strong> <span id="product-material"></span></p>
+        </div>
+
+        <button id="product-add-btn" class="btn btn-dark add-to-cart-main" data-id="" data-name="" data-price=""
+          data-image="">
+          Добавить в корзину
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <p>© 2026 Raflimited. Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

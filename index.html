@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFLIMITED — Главная</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">RAFLIMITED</a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="#about">О нас</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__icons">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="site-search" placeholder="Поиск товаров..." />
+        </div>
+
+        <a href="login.html" id="user-link"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__content">
+          <div class="hero__text">
+            <h1>Новая коллекция<br>Raflimited</h1>
+            <p>Современная мужская одежда для тех, кто ценит стиль, качество и комфорт</p>
+            <a href="catalog.html" class="btn btn-light">Перейти в каталог <span>→</span></a>
+          </div>
+          <div class="hero__image">
+            <img src="img/new_collection.jpg" alt="Новая коллекция" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="categories section">
+      <div class="container">
+        <h2 class="section-title">Категории</h2>
+        <div class="categories__grid">
+          <div class="category-card">
+            <img src="img/t-shirt.jpg" alt="Футболки" />
+            <p>Футболки</p>
+          </div>
+          <div class="category-card">
+            <img src="img/shirt.jpg" alt="Рубашки" />
+            <p>Рубашки</p>
+          </div>
+          <div class="category-card">
+            <img src="img/hoodies.jpg" alt="Худи" />
+            <p>Худи</p>
+          </div>
+          <div class="category-card">
+            <img src="img/trousers.jpg" alt="Брюки" />
+            <p>Брюки</p>
+          </div>
+          <div class="category-card">
+            <img src="img/bag.jpg" alt="Аксессуары" />
+            <p>Аксессуары</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section">
+      <div class="container">
+        <h2 class="section-title">Популярные товары</h2>
+
+        <div id="search-empty-message" class="empty-cart hidden">
+          <h2>Ничего не найдено</h2>
+          <p>Попробуйте изменить запрос.</p>
+        </div>
+
+        <div class="products__grid" id="products-grid">
+          <div class="product-card searchable-product"
+            data-search="базовая футболка oversize футболка белая хлопок streetwear" data-category="футболки">
+            <img src="img/t_shirt_amiri.jpg" alt="Базовая футболка Oversize" />
+            <div class="product-card__body">
+              <h3>Базовая футболка Oversize</h3>
+              <p class="price">3 990 ₽</p>
+              <div class="product-card__actions">
+                <a href="product.html?id=1" class="btn btn-dark">Подробнее</a>
+                <button class="cart-btn" data-id="1" data-name="Базовая футболка Oversize" data-price="3990"
+                  data-image="img/t_shirt_amiri.jpg">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card searchable-product" data-search="спортивный костюм костюм черный хлопок полиэстер"
+            data-category="костюмы">
+            <img src="img/costume_sport.jpg" alt="Спортивный костюм" />
+            <div class="product-card__body">
+              <h3>Спортивный костюм</h3>
+              <p class="price">5 990 ₽</p>
+              <div class="product-card__actions">
+                <a href="product.html?id=2" class="btn btn-dark">Подробнее</a>
+                <button class="cart-btn" data-id="2" data-name="Спортивный костюм" data-price="5990"
+                  data-image="img/costume_sport.jpg">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card searchable-product"
+            data-search="худи raflimited худи светлое бежевое хлопок полиэстер" data-category="худи">
+            <img src="img/hoodies_light.jpg" alt="Худи Raflimited" />
+            <div class="product-card__body">
+              <h3>Худи Raflimited</h3>
+              <p class="price">5 500 ₽</p>
+              <div class="product-card__actions">
+                <a href="product.html?id=3" class="btn btn-dark">Подробнее</a>
+                <button class="cart-btn" data-id="3" data-name="Худи Raflimited" data-price="5500"
+                  data-image="img/hoodies_light.jpg">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card searchable-product" data-search="джинсы бананки джинсы голубой деним брюки"
+            data-category="брюки">
+            <img src="img/jeans.jpg" alt="Джинсы бананки" />
+            <div class="product-card__body">
+              <h3>Джинсы бананки</h3>
+              <p class="price">4 990 ₽</p>
+              <div class="product-card__actions">
+                <a href="product.html?id=4" class="btn btn-dark">Подробнее</a>
+                <button class="cart-btn" data-id="4" data-name="Джинсы бананки" data-price="4990"
+                  data-image="img/jeans.jpg">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="features section">
+      <div class="container">
+        <div class="features__grid">
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-truck"></i></div>
+            <h3>Быстрая доставка</h3>
+            <p>Доставим ваш заказ в течение 2-3 дней</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-rotate-left"></i></div>
+            <h3>Удобный возврат</h3>
+            <p>Возврат товара в течение 14 дней</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-regular fa-credit-card"></i></div>
+            <h3>Безопасная оплата</h3>
+            <p>Гарантируем защиту ваших данных</p>
+          </div>
+          <div class="feature-item">
+            <div class="feature-icon"><i class="fa-solid fa-cube"></i></div>
+            <h3>Актуальные размеры</h3>
+            <p>Реальные остатки и размеры на складе</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="container about__content">
+        <h2 class="section-title">О бренде Raflimited</h2>
+        <p>
+          Raflimited — интернет-магазин мужской одежды, сочетающий современный стиль,
+          удобство онлайн-шопинга и внимание к качеству каждой модели.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <h3>RAFLIMITED</h3>
+        <p>Современная мужская одежда для тех, кто ценит стиль и качество</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>МЕНЮ</h4>
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="#about">О нас</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>КАТЕГОРИИ</h4>
+        <a href="#">Футболки</a>
+        <a href="#">Рубашки</a>
+        <a href="#">Худи</a>
+        <a href="#">Брюки</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>КОНТАКТЫ</h4>
+        <p><i class="fa-solid fa-phone"></i> +7 (999) 123-45-67</p>
+        <p><i class="fa-regular fa-envelope"></i> info@raflimited.ru</p>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-vk"></i></a>
+          <a href="#"><i class="fa-brands fa-telegram"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© 2026 Raflimited. Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

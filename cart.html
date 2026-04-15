@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFLIMITED — Корзина</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">RAFLIMITED</a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__icons">
+        <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        <a href="login.html" id="user-link"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Корзина</h1>
+
+      <div class="cart-page">
+        <div class="cart-content">
+          <div id="cart-items" class="cart-items"></div>
+
+          <div id="empty-cart-message" class="empty-cart hidden">
+            <h2>Корзина пуста</h2>
+            <p>Добавьте товары, чтобы оформить заказ.</p>
+            <a href="catalog.html" class="btn btn-dark">Перейти в каталог</a>
+          </div>
+        </div>
+
+        <aside class="cart-summary">
+          <h2>Ваш заказ</h2>
+
+          <div class="summary-row">
+            <span>Товары</span>
+            <span id="summary-items-count">0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Сумма</span>
+            <span id="summary-subtotal">0 ₽</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Доставка</span>
+            <span id="summary-delivery">0 ₽</span>
+          </div>
+
+          <div class="summary-row total">
+            <span>Итого</span>
+            <span id="summary-total">0 ₽</span>
+          </div>
+
+          <button id="checkout-btn" class="btn btn-dark checkout-btn" type="button">
+            Оформить заказ
+          </button>
+
+          <a href="catalog.html" class="continue-shopping-btn">
+            Продолжить покупки
+          </a>
+
+          <button id="clear-cart-btn" class="clear-cart-btn" type="button">
+            Очистить корзину
+          </button>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <p>© 2026 Raflimited. Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

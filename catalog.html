@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RAFLIMITED — Каталог</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__container">
+      <a href="index.html" class="logo">RAFLIMITED</a>
+
+      <nav class="nav">
+        <a href="index.html">Главная</a>
+        <a href="catalog.html">Каталог</a>
+        <a href="catalog.html">Новинки</a>
+        <a href="index.html#about">О нас</a>
+        <a href="index.html#contacts">Контакты</a>
+      </nav>
+
+      <div class="header__icons">
+        <div class="search-box">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="site-search" placeholder="Поиск товаров..." />
+        </div>
+
+        <a href="login.html" id="user-link"><i class="fa-regular fa-user"></i></a>
+        <a href="cart.html" class="cart-link">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <span class="cart-count" id="cart-count">0</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="section-title">Каталог товаров</h1>
+
+      <div class="catalog-toolbar">
+        <div class="catalog-filters">
+          <button class="filter-btn active" data-filter="all" type="button">Все</button>
+          <button class="filter-btn" data-filter="футболки" type="button">Футболки</button>
+          <button class="filter-btn" data-filter="костюмы" type="button">Костюмы</button>
+          <button class="filter-btn" data-filter="худи" type="button">Худи</button>
+          <button class="filter-btn" data-filter="брюки" type="button">Брюки</button>
+        </div>
+
+        <div class="sort-box">
+          <label for="sort-select">Сортировка:</label>
+          <select id="sort-select">
+            <option value="default">По умолчанию</option>
+            <option value="price-asc">Сначала дешёвые</option>
+            <option value="price-desc">Сначала дорогие</option>
+            <option value="name-asc">По названию А-Я</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="search-empty-message" class="empty-cart hidden">
+        <h2>Ничего не найдено</h2>
+        <p>Попробуйте изменить запрос, фильтр или сортировку.</p>
+      </div>
+
+      <div class="products__grid" id="products-grid">
+        <div class="product-card searchable-product" data-id="1" data-name="Базовая футболка Oversize" data-price="3990"
+          data-search="базовая футболка oversize футболка белая хлопок streetwear" data-category="футболки">
+          <img src="img/t_shirt_amiri.jpg" alt="Базовая футболка Oversize" />
+          <div class="product-card__body">
+            <h3>Базовая футболка Oversize</h3>
+            <p class="price">3 990 ₽</p>
+            <div class="product-card__actions">
+              <a href="product.html?id=1" class="btn btn-dark">Подробнее</a>
+              <button class="cart-btn" data-id="1" data-name="Базовая футболка Oversize" data-price="3990"
+                data-image="img/t_shirt_amiri.jpg">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card searchable-product" data-id="2" data-name="Спортивный костюм" data-price="5990"
+          data-search="спортивный костюм костюм черный хлопок полиэстер" data-category="костюмы">
+          <img src="img/costume_sport.jpg" alt="Спортивный костюм" />
+          <div class="product-card__body">
+            <h3>Спортивный костюм</h3>
+            <p class="price">5 990 ₽</p>
+            <div class="product-card__actions">
+              <a href="product.html?id=2" class="btn btn-dark">Подробнее</a>
+              <button class="cart-btn" data-id="2" data-name="Спортивный костюм" data-price="5990"
+                data-image="img/costume_sport.jpg">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card searchable-product" data-id="3" data-name="Худи Raflimited" data-price="5500"
+          data-search="худи raflimited худи светлое бежевое хлопок полиэстер" data-category="худи">
+          <img src="img/hoodies_light.jpg" alt="Худи Raflimited" />
+          <div class="product-card__body">
+            <h3>Худи Raflimited</h3>
+            <p class="price">5 500 ₽</p>
+            <div class="product-card__actions">
+              <a href="product.html?id=3" class="btn btn-dark">Подробнее</a>
+              <button class="cart-btn" data-id="3" data-name="Худи Raflimited" data-price="5500"
+                data-image="img/hoodies_light.jpg">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card searchable-product" data-id="4" data-name="Джинсы бананки" data-price="4990"
+          data-search="джинсы бананки джинсы голубой деним брюки" data-category="брюки">
+          <img src="img/jeans.jpg" alt="Джинсы бананки" />
+          <div class="product-card__body">
+            <h3>Джинсы бананки</h3>
+            <p class="price">4 990 ₽</p>
+            <div class="product-card__actions">
+              <a href="product.html?id=4" class="btn btn-dark">Подробнее</a>
+              <button class="cart-btn" data-id="4" data-name="Джинсы бананки" data-price="4990"
+                data-image="img/jeans.jpg">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__bottom">
+      <p>© 2026 Raflimited. Все права защищены</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
