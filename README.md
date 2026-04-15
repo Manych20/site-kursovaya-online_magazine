@@ -18,6 +18,6 @@
 
 ## 🛠️ Технологии
 
-- **Frontend**: 
-- **Backend**: 
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Backend**:
 - **База данных**:
